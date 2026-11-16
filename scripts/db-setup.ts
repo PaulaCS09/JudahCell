@@ -48,7 +48,7 @@ const col: Record<string, string> = {
   id: "id", categoryId: "category_id", brand: "brand", model: "model", description: "description",
   priceCop: "price_cop", stock: "stock", image: "image", imageIsIllustration: "image_is_illustration",
   ramGb: "ram_gb", storageGb: "storage_gb", mainCameraMp: "main_camera_mp", cameraSummary: "camera_summary",
-  batteryMah: "battery_mah", screen: "screen", processor: "processor", performanceScore: "performance_score",
+  batteryMah: "battery_mah", screen: "screen", processor: "processor", performanceScore: "performance_score", cameraScore: "camera_score", batteryScore: "battery_score",
   has5g: "has_5g", connector: "connector", highlights: "highlights", colors: "colors",
   warrantyMonths: "warranty_months", isDemo: "is_demo", active: "active",
 };
@@ -121,7 +121,7 @@ async function main() {
       const p = priceOf.get(it.productId)!;
       stmts.push({
         sql: "INSERT INTO order_items (order_code, product_id, product_name, unit_price_cop, quantity) VALUES (?,?,?,?,?)",
-        args: [o.code, it.productId, `${p.brand} ${p.model}`, p.priceCop as number, it.quantity],
+        args: [o.code, it.productId, String(p.brand).startsWith("Genérico") ? String(p.model) : `${p.brand} ${p.model}`, p.priceCop as number, it.quantity],
       });
     }
   }

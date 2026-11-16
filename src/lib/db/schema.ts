@@ -31,7 +31,11 @@ export const products = sqliteTable("products", {
   batteryMah: integer("battery_mah"),
   screen: text("screen"),
   processor: text("processor"),
-  performanceScore: integer("performance_score"), // 1 (básico) a 5 (alto)
+  // Calificaciones de referencia internas del catálogo, 1 (básico) a 5 (alto).
+  // Las define el negocio; alimentan el motor de recomendaciones y el comparador.
+  performanceScore: integer("performance_score"),
+  cameraScore: integer("camera_score"),
+  batteryScore: integer("battery_score"),
   has5g: integer("has_5g", { mode: "boolean" }),
   connector: text("connector"), // ej. "USB-C"
   highlights: text("highlights", { mode: "json" }).$type<string[]>().notNull().default([]),

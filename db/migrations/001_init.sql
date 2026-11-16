@@ -24,6 +24,8 @@ CREATE TABLE IF NOT EXISTS products (
   screen TEXT,
   processor TEXT,
   performance_score INTEGER CHECK (performance_score BETWEEN 1 AND 5),
+  camera_score INTEGER CHECK (camera_score BETWEEN 1 AND 5),
+  battery_score INTEGER CHECK (battery_score BETWEEN 1 AND 5),
   has_5g INTEGER,
   connector TEXT,
   highlights TEXT NOT NULL DEFAULT '[]',

@@ -10,6 +10,11 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   serverExternalPackages: ["@libsql/client"],
+  images: {
+    // Las ilustraciones SVG son archivos propios del proyecto (public/products/ilustraciones)
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+  },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },
