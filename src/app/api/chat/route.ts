@@ -7,6 +7,7 @@ import { chatRequestSchema } from "@/lib/validation";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+export const maxDuration = 60;
 
 const MAX_TOOL_ROUNDS = 6;
 const HISTORY_LIMIT = 20;
