@@ -21,7 +21,7 @@ export class AIError extends Error {
   }
 }
 
-const DEFAULT_MODELS = "gemini-3.5-flash,gemini-3.1-flash-lite,gemini-2.5-flash";
+const DEFAULT_MODELS = "gemini-3.1-flash-lite,gemini-3.5-flash-lite,gemini-3.5-flash";
 
 export function aiConfigured() {
   return !!process.env.GEMINI_API_KEY;
