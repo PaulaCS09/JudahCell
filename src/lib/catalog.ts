@@ -1,6 +1,6 @@
 import "server-only";
 import { and, asc, eq, gte, inArray, lte, sql } from "drizzle-orm";
-import { db, schema } from "./db/client";
+import { db, ensureDb, schema } from "./db/client";
 import type { Product } from "./db/schema";
 
 const { products, categories, compatibilities, settings } = schema;
@@ -20,10 +20,12 @@ export type ProductFilters = {
 };
 
 export async function getCategories() {
+  await ensureDb();
   return db.select().from(categories).orderBy(asc(categories.sortOrder));
 }
 
 export async function listProducts(f: ProductFilters = {}): Promise<Product[]> {
+  await ensureDb();
   const conds = [eq(products.active, true)];
   if (f.category === "accesorios") {
     const acc = await db.select({ id: categories.id }).from(categories).where(eq(categories.kind, "accessory"));
@@ -52,26 +54,31 @@ export async function listProducts(f: ProductFilters = {}): Promise<Product[]> {
 }
 
 export async function getProduct(id: string) {
+  await ensureDb();
   const [p] = await db.select().from(products).where(and(eq(products.id, id), eq(products.active, true)));
   return p ?? null;
 }
 
 export async function getProductsByIds(ids: string[]) {
+  await ensureDb();
   if (!ids.length) return [];
   return db.select().from(products).where(and(inArray(products.id, ids), eq(products.active, true)));
 }
 
 export async function getPhones() {
+  await ensureDb();
   return listProducts({ category: "celulares" });
 }
 
 export async function getBrands(category?: string) {
+  await ensureDb();
   const list = await listProducts({ category });
   return [...new Set(list.map((p) => p.brand))].sort();
 }
 
 /** Accesorios compatibles VERIFICADOS para un celular. */
 export async function getCompatibleAccessories(phoneId: string) {
+  await ensureDb();
   const rows = await db
     .select({ product: products, note: compatibilities.note })
     .from(compatibilities)
@@ -83,6 +90,7 @@ export async function getCompatibleAccessories(phoneId: string) {
 
 /** Celulares con los que un accesorio es compatible (verificado). */
 export async function getAccessoryCompatibility(accessoryId: string) {
+  await ensureDb();
   const rows = await db
     .select({ id: products.id, brand: products.brand, model: products.model })
     .from(compatibilities)
@@ -108,6 +116,7 @@ export type StoreSettings = {
 };
 
 export async function getSettings(): Promise<StoreSettings> {
+  await ensureDb();
   const rows = await db.select().from(settings);
   return Object.fromEntries(rows.map((r) => [r.key, r.value])) as StoreSettings;
 }

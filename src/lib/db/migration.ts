@@ -1,3 +1,5 @@
+/** Esquema inicial (SQLite / libSQL). Idempotente: usa CREATE TABLE IF NOT EXISTS. */
+export const MIGRATION_SQL = `
 -- JUDAH CELL · esquema inicial (SQLite / libSQL)
 CREATE TABLE IF NOT EXISTS categories (
   id TEXT PRIMARY KEY,
@@ -75,3 +77,4 @@ CREATE TABLE IF NOT EXISTS settings (
   key TEXT PRIMARY KEY,
   value TEXT NOT NULL
 );
+`;

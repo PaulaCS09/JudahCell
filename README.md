@@ -150,13 +150,16 @@ Las condiciones de cada proveedor cambian, así que verifícalas antes de contra
 - **Hosting**: Vercel tiene un plan gratuito (Hobby) pensado para uso no comercial. Para operación comercial conviene el plan Pro u otro proveedor, como Render, Railway o un VPS.
 - **Base de datos**: Turso tiene un plan gratuito suficiente para este catálogo. SQLite local no tiene costo.
 
-### Despliegue sugerido (Vercel + Turso)
+### Despliegue en Vercel (conectado a GitHub)
 
-1. Crea una base en Turso y obtén `libsql://...` y el token.
-2. Carga los datos desde tu computador: `DATABASE_URL=libsql://... DATABASE_AUTH_TOKEN=... npm run db:reset`.
-3. Importa el repositorio en Vercel y configura las variables de entorno.
+1. En https://vercel.com → **Add New → Project** → importa este repositorio. Vercel detecta Next.js solo.
+2. En **Environment Variables** agrega `GEMINI_API_KEY` (y, si quieres, `GEMINI_MODEL`).
+3. **Deploy.** Cada `git push` a `main` vuelve a publicar la página automáticamente.
 
-> En Vercel el archivo SQLite local no persiste: usa Turso.
+Sin `DATABASE_URL`, en Vercel se usa una base SQLite temporal que **se crea y se llena sola** con el catálogo de demostración. Funciona para la demo, pero **los pedidos nuevos se pierden** cuando Vercel reinicia el servidor. Para que los pedidos persistan:
+
+1. Crea una base gratuita en https://turso.tech y obtén la URL `libsql://...` y el token.
+2. Agrega `DATABASE_URL` y `DATABASE_AUTH_TOKEN` en Vercel. Con la base vacía, el catálogo de demostración se carga solo al primer uso. Para cargar el catálogo real, usa `npm run db:reset -- --catalog ...` desde tu computador con esas mismas variables.
 
 ## 9. Estructura
 
@@ -168,13 +171,12 @@ src/
     providers/         estado del carrito, comparador y conversación
   lib/
     ai/                cliente Gemini, prompt del sistema y herramientas
-    db/                esquema Drizzle y conexión
+    db/                esquema Drizzle, migración SQL, carga del catálogo y conexión
     catalog.ts         consultas del catálogo y configuración
     recommend.ts       motor de recomendaciones (puro y probado)
     orders.ts          creación y consulta de pedidos
     validation.ts      esquemas Zod
 db/
-  migrations/          SQL del esquema
   seed/                catálogo de demostración (JSON)
 scripts/db-setup.ts    carga del catálogo
 tests/                 pruebas y servidor Gemini simulado

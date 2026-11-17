@@ -1,7 +1,7 @@
 import "server-only";
 import { randomInt } from "node:crypto";
 import { and, eq, inArray } from "drizzle-orm";
-import { db, schema } from "./db/client";
+import { db, ensureDb, schema } from "./db/client";
 import { getSettings } from "./catalog";
 
 const { orders, orderItems, products } = schema;
@@ -23,6 +23,7 @@ export class OrderError extends Error {}
 
 /** Crea una solicitud de pedido. Los precios SIEMPRE se toman de la BD, nunca del cliente. */
 export async function createOrder(input: NewOrder) {
+  await ensureDb();
   // Agrupar cantidades por producto
   const qty = new Map<string, number>();
   for (const it of input.items) qty.set(it.productId, (qty.get(it.productId) ?? 0) + it.quantity);
@@ -72,6 +73,7 @@ export async function createOrder(input: NewOrder) {
 
 /** Consulta un pedido. Requiere código + celular (control de acceso básico). */
 export async function findOrder(code: string, phone: string) {
+  await ensureDb();
   const [o] = await db.select().from(orders).where(and(eq(orders.code, code), eq(orders.phone, phone)));
   if (!o) return null;
   const items = await db.select().from(orderItems).where(eq(orderItems.orderCode, code));
