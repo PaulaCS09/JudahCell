@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@import "@fontsource-variable/jost";
+@import "@fontsource-variable/inter";
+
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Jost Variable", "Inter Variable", ui-sans-serif, sans-serif;
+
+  /* Azul oscuro principal */
+  --color-navy-950: #040a1c;
+  --color-navy-900: #071330;
+  --color-navy-800: #0c1f4a;
+  --color-navy-700: #14306b;
+  /* Azul eléctrico */
+  --color-electric-600: #1e4fe6;
+  --color-electric-500: #2563ff;
+  --color-electric-400: #4f86ff;
+  /* Cyan (eco del cyan de los hexágonos del logo) */
+  --color-brand-cyan: #5ee9f0;
+  --color-brand-cyan-600: #0fb5c2;
+  --color-ink: #0b1630;
+  --color-muted: #5b6b8c;
+  --color-line: #e3e8f2;
+  --color-surface: #f5f8fc;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { @apply bg-surface text-ink antialiased; }
+  h1, h2, h3, .font-display { font-family: var(--font-display); letter-spacing: -0.01em; }
+  :focus-visible { outline: 3px solid var(--color-electric-400); outline-offset: 2px; border-radius: 6px; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+}
+
+@utility container-x { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;}
+
+@utility btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-50;}
+
+@utility btn-primary { @apply btn bg-electric-500 text-white shadow-[0_8px_24px_-8px_rgba(37,99,255,.7)] hover:bg-electric-600;}
+
+@utility btn-cyan { @apply btn bg-brand-cyan text-navy-950 hover:bg-white;}
+
+@utility btn-ghost { @apply btn border border-white/20 text-white hover:bg-white/10;}
+
+@utility btn-outline { @apply btn border border-line bg-white text-ink hover:border-electric-400 hover:text-electric-600;}
+
+@utility card { @apply rounded-2xl border border-line bg-white;}
+
+@utility chip { @apply inline-flex items-center gap-1 rounded-full border border-line bg-white px-3 py-1 text-xs font-medium text-ink;}
+
+@utility input { @apply w-full rounded-xl border border-line bg-white px-4 py-3 text-sm text-ink placeholder:text-muted/70 focus:border-electric-400 focus:outline-none focus:ring-4 focus:ring-electric-400/15;}
+
+@utility label { @apply mb-1.5 block text-sm font-medium text-ink;}
+
+@utility demo-badge { @apply inline-flex items-center gap-1 rounded-md bg-amber-100 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-amber-800;}
+
+@utility hero-glow {
+    background:
+      radial-gradient(60% 60% at 85% 10%, rgba(37, 99, 255, 0.35), transparent 60%),
+      radial-gradient(40% 50% at 10% 90%, rgba(94, 233, 240, 0.16), transparent 60%),
+      linear-gradient(180deg, var(--color-navy-900), var(--color-navy-950));}
+
+@utility hex-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='98' viewBox='0 0 56 98'%3E%3Cpath d='M28 66L0 50V16L28 0l28 16v34L28 66zm0 32V66' fill='none' stroke='%235ee9f0' stroke-opacity='.07' stroke-width='1.2'/%3E%3C/svg%3E");}
+
+@layer components {
+  .prose-chat p { @apply mb-2 last:mb-0; }
+  .prose-chat ul { @apply mb-2 list-disc space-y-1 pl-5; }
+  .prose-chat ol { @apply mb-2 list-decimal space-y-1 pl-5; }
+  .prose-chat strong { @apply font-semibold; }
+}
+
+@keyframes typing { 0%, 80%, 100% { opacity: .25; transform: translateY(0) } 40% { opacity: 1; transform: translateY(-2px) } }
+.typing-dot { animation: typing 1.2s infinite ease-in-out; }
+.typing-dot:nth-child(2) { animation-delay: .15s; }
+.typing-dot:nth-child(3) { animation-delay: .3s; }

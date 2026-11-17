@@ -1,0 +1,852 @@
+{
+  "_aviso": "DATOS DE DEMOSTRACIÓN. Precios, existencias y especificaciones son ficticios/aproximados para el prototipo. No representan el inventario real de JUDAH CELL.",
+  "categories": [
+    {
+      "id": "celulares",
+      "name": "Celulares",
+      "kind": "phone",
+      "sortOrder": 1
+    },
+    {
+      "id": "audifonos",
+      "name": "Audífonos",
+      "kind": "accessory",
+      "sortOrder": 2
+    },
+    {
+      "id": "cargadores",
+      "name": "Cargadores y cables",
+      "kind": "accessory",
+      "sortOrder": 3
+    },
+    {
+      "id": "proteccion",
+      "name": "Fundas y protectores",
+      "kind": "accessory",
+      "sortOrder": 4
+    },
+    {
+      "id": "otros",
+      "name": "Otros accesorios",
+      "kind": "accessory",
+      "sortOrder": 5
+    }
+  ],
+  "products": [
+    {
+      "id": "galaxy-a07",
+      "categoryId": "celulares",
+      "brand": "Samsung",
+      "model": "Galaxy A07",
+      "description": "Un Samsung de entrada, sencillo y confiable para llamadas, WhatsApp y redes sociales.",
+      "priceCop": 549900,
+      "stock": 8,
+      "image": "/products/galaxy-a07.webp",
+      "ramGb": 4,
+      "storageGb": 128,
+      "mainCameraMp": 50,
+      "cameraSummary": "Principal 50 MP + profundidad; frontal 8 MP",
+      "batteryMah": 5000,
+      "screen": "6,7\" LCD 90 Hz",
+      "processor": "MediaTek Helio G99",
+      "performanceScore": 2,
+      "cameraScore": 2,
+      "batteryScore": 3,
+      "has5g": false,
+      "connector": "USB-C",
+      "highlights": [
+        "Varios años de actualizaciones de seguridad",
+        "Pantalla grande de 6,7\"",
+        "Ideal para uso básico"
+      ],
+      "colors": [
+        "Verde",
+        "Negro"
+      ],
+      "warrantyMonths": 6
+    },
+    {
+      "id": "galaxy-a37",
+      "categoryId": "celulares",
+      "brand": "Samsung",
+      "model": "Galaxy A37 5G",
+      "description": "Gama media equilibrada: pantalla AMOLED, buen rendimiento y cámaras versátiles.",
+      "priceCop": 1699900,
+      "stock": 5,
+      "image": "/products/galaxy-a37.webp",
+      "ramGb": 8,
+      "storageGb": 256,
+      "mainCameraMp": 50,
+      "cameraSummary": "Triple: 50 MP con estabilización óptica + gran angular 8 MP + macro; frontal 12 MP",
+      "batteryMah": 5000,
+      "screen": "6,7\" Super AMOLED 120 Hz",
+      "processor": "Exynos 1580",
+      "performanceScore": 4,
+      "cameraScore": 4,
+      "batteryScore": 4,
+      "has5g": true,
+      "connector": "USB-C",
+      "highlights": [
+        "Estabilización óptica (OIS)",
+        "Resistencia al agua IP67",
+        "Pantalla AMOLED 120 Hz"
+      ],
+      "colors": [
+        "Grafito",
+        "Lavanda",
+        "Blanco"
+      ],
+      "warrantyMonths": 6
+    },
+    {
+      "id": "moto-g15",
+      "categoryId": "celulares",
+      "brand": "Motorola",
+      "model": "Moto g15",
+      "description": "Mucho almacenamiento por su precio y una batería que aguanta el día completo.",
+      "priceCop": 599900,
+      "stock": 10,
+      "image": "/products/moto-g15.webp",
+      "ramGb": 4,
+      "storageGb": 256,
+      "mainCameraMp": 50,
+      "cameraSummary": "Principal 50 MP + gran angular 5 MP; frontal 8 MP",
+      "batteryMah": 5200,
+      "screen": "6,72\" LCD Full HD+",
+      "processor": "MediaTek Helio G81 Extreme",
+      "performanceScore": 2,
+      "cameraScore": 2,
+      "batteryScore": 4,
+      "has5g": false,
+      "connector": "USB-C",
+      "highlights": [
+        "256 GB de almacenamiento",
+        "Batería de 5200 mAh",
+        "Android casi puro"
+      ],
+      "colors": [
+        "Verde",
+        "Gris"
+      ],
+      "warrantyMonths": 6
+    },
+    {
+      "id": "moto-g67",
+      "categoryId": "celulares",
+      "brand": "Motorola",
+      "model": "Moto g67 5G",
+      "description": "Rendimiento fluido, 5G y resistencia reforzada para quien usa el celular todo el día.",
+      "priceCop": 1199900,
+      "stock": 6,
+      "image": "/products/moto-g67.webp",
+      "ramGb": 8,
+      "storageGb": 256,
+      "mainCameraMp": 50,
+      "cameraSummary": "Principal 50 MP + gran angular 8 MP; frontal 32 MP",
+      "batteryMah": 5200,
+      "screen": "6,7\" pOLED 120 Hz",
+      "processor": "MediaTek Dimensity 7300",
+      "performanceScore": 4,
+      "cameraScore": 3,
+      "batteryScore": 4,
+      "has5g": true,
+      "connector": "USB-C",
+      "highlights": [
+        "Pantalla pOLED 120 Hz",
+        "Cámara frontal de 32 MP",
+        "5G"
+      ],
+      "colors": [
+        "Verde oliva",
+        "Gris"
+      ],
+      "warrantyMonths": 6
+    },
+    {
+      "id": "oppo-a40",
+      "categoryId": "celulares",
+      "brand": "OPPO",
+      "model": "A40",
+      "description": "Diseño llamativo y resistente, con carga rápida para el día a día.",
+      "priceCop": 749900,
+      "stock": 4,
+      "image": "/products/oppo-a40.webp",
+      "ramGb": 6,
+      "storageGb": 128,
+      "mainCameraMp": 50,
+      "cameraSummary": "Principal 50 MP + profundidad; frontal 5 MP",
+      "batteryMah": 5100,
+      "screen": "6,67\" LCD 90 Hz",
+      "processor": "Snapdragon 6s Gen 1",
+      "performanceScore": 3,
+      "cameraScore": 2,
+      "batteryScore": 4,
+      "has5g": false,
+      "connector": "USB-C",
+      "highlights": [
+        "Carga rápida 45 W",
+        "Resistencia a caídas",
+        "Diseño atractivo"
+      ],
+      "colors": [
+        "Morado",
+        "Vino tinto"
+      ],
+      "warrantyMonths": 6
+    },
+    {
+      "id": "redmi-15c",
+      "categoryId": "celulares",
+      "brand": "Xiaomi",
+      "model": "Redmi 15C",
+      "description": "La batería más grande del catálogo en un celular económico.",
+      "priceCop": 579900,
+      "stock": 12,
+      "image": "/products/redmi-15c.webp",
+      "ramGb": 4,
+      "storageGb": 128,
+      "mainCameraMp": 50,
+      "cameraSummary": "Principal 50 MP con IA; frontal 8 MP",
+      "batteryMah": 6000,
+      "screen": "6,9\" LCD 120 Hz",
+      "processor": "MediaTek Helio G81 Ultra",
+      "performanceScore": 2,
+      "cameraScore": 2,
+      "batteryScore": 5,
+      "has5g": false,
+      "connector": "USB-C",
+      "highlights": [
+        "Batería de 6000 mAh",
+        "Pantalla de 6,9\" a 120 Hz",
+        "Muy buen precio"
+      ],
+      "colors": [
+        "Azul",
+        "Negro",
+        "Menta"
+      ],
+      "warrantyMonths": 6
+    },
+    {
+      "id": "redmi-17",
+      "categoryId": "celulares",
+      "brand": "Xiaomi",
+      "model": "Redmi 17",
+      "description": "Gran batería, buen almacenamiento y rendimiento suficiente para juegos casuales.",
+      "priceCop": 899900,
+      "stock": 7,
+      "image": "/products/redmi-17.webp",
+      "ramGb": 8,
+      "storageGb": 256,
+      "mainCameraMp": 50,
+      "cameraSummary": "Principal 50 MP + gran angular; frontal 8 MP",
+      "batteryMah": 5500,
+      "screen": "6,8\" LCD 120 Hz",
+      "processor": "MediaTek Helio G100",
+      "performanceScore": 3,
+      "cameraScore": 3,
+      "batteryScore": 5,
+      "has5g": false,
+      "connector": "USB-C",
+      "highlights": [
+        "8 GB de RAM",
+        "256 GB de almacenamiento",
+        "Batería de 5500 mAh"
+      ],
+      "colors": [
+        "Negro",
+        "Verde"
+      ],
+      "warrantyMonths": 6
+    },
+    {
+      "id": "honor-play-10",
+      "categoryId": "celulares",
+      "brand": "HONOR",
+      "model": "Play 10",
+      "description": "El más económico del catálogo: cumple para llamadas, mensajería y redes.",
+      "priceCop": 449900,
+      "stock": 9,
+      "image": "/products/honor-play-10.webp",
+      "ramGb": 4,
+      "storageGb": 64,
+      "mainCameraMp": 13,
+      "cameraSummary": "Principal 13 MP; frontal 5 MP",
+      "batteryMah": 5200,
+      "screen": "6,6\" LCD",
+      "processor": "Unisoc T7250",
+      "performanceScore": 1,
+      "cameraScore": 1,
+      "batteryScore": 4,
+      "has5g": false,
+      "connector": "USB-C",
+      "highlights": [
+        "Precio más bajo",
+        "Batería de 5200 mAh",
+        "Liviano"
+      ],
+      "colors": [
+        "Verde menta",
+        "Negro"
+      ],
+      "warrantyMonths": 6
+    },
+    {
+      "id": "infinix-note-60",
+      "categoryId": "celulares",
+      "brand": "Infinix",
+      "model": "Note 60 5G",
+      "description": "Gran pantalla, carga muy rápida y mucho almacenamiento a precio de gama media.",
+      "priceCop": 1049900,
+      "stock": 3,
+      "image": "/products/infinix-note-60.webp",
+      "ramGb": 8,
+      "storageGb": 256,
+      "mainCameraMp": 108,
+      "cameraSummary": "Principal 108 MP + gran angular; frontal 32 MP",
+      "batteryMah": 5500,
+      "screen": "6,78\" AMOLED 144 Hz",
+      "processor": "MediaTek Dimensity 7300",
+      "performanceScore": 4,
+      "cameraScore": 3,
+      "batteryScore": 4,
+      "has5g": true,
+      "connector": "USB-C",
+      "highlights": [
+        "Carga rápida 70 W",
+        "Pantalla AMOLED 144 Hz",
+        "Cámara de 108 MP"
+      ],
+      "colors": [
+        "Verde",
+        "Negro"
+      ],
+      "warrantyMonths": 6
+    },
+    {
+      "id": "iphone-17e",
+      "categoryId": "celulares",
+      "brand": "Apple",
+      "model": "iPhone 17e",
+      "description": "La entrada al ecosistema Apple: rendimiento alto y larga vida útil en actualizaciones.",
+      "priceCop": 3299900,
+      "stock": 2,
+      "image": "/products/iphone-17e.webp",
+      "ramGb": 8,
+      "storageGb": 128,
+      "mainCameraMp": 48,
+      "cameraSummary": "Principal 48 MP Fusion; frontal 12 MP",
+      "batteryMah": null,
+      "screen": "6,1\" OLED Super Retina XDR",
+      "processor": "Apple A19",
+      "performanceScore": 5,
+      "cameraScore": 5,
+      "batteryScore": 4,
+      "has5g": true,
+      "connector": "USB-C",
+      "highlights": [
+        "Chip de alto rendimiento",
+        "Muchos años de actualizaciones de iOS",
+        "Video de muy buena calidad"
+      ],
+      "colors": [
+        "Negro",
+        "Blanco",
+        "Rosa"
+      ],
+      "warrantyMonths": 6
+    },
+    {
+      "id": "jbl-tune-780nc",
+      "categoryId": "audifonos",
+      "brand": "JBL",
+      "model": "Tune 780NC",
+      "description": "Audífonos de diadema inalámbricos con cancelación de ruido.",
+      "priceCop": 459900,
+      "stock": 5,
+      "image": "/products/jbl-tune-780nc.webp",
+      "batteryMah": null,
+      "connector": "Bluetooth / USB-C",
+      "highlights": [
+        "Cancelación activa de ruido",
+        "Bluetooth",
+        "Plegables"
+      ],
+      "colors": [
+        "Blanco",
+        "Negro"
+      ],
+      "warrantyMonths": null
+    },
+    {
+      "id": "airpods-pro",
+      "categoryId": "audifonos",
+      "brand": "Apple",
+      "model": "AirPods Pro (2.ª gen.)",
+      "description": "Audífonos inalámbricos con cancelación de ruido; integración completa con iPhone.",
+      "priceCop": 1149900,
+      "stock": 3,
+      "image": "/products/airpods-pro.webp",
+      "connector": "Bluetooth / USB-C",
+      "highlights": [
+        "Cancelación activa de ruido",
+        "Estuche con carga USB-C",
+        "Funciones extra con iPhone"
+      ],
+      "colors": [
+        "Blanco"
+      ],
+      "warrantyMonths": null
+    },
+    {
+      "id": "cargador-25w-usbc",
+      "categoryId": "cargadores",
+      "brand": "Genérico (demo)",
+      "model": "Cargador USB-C 25 W",
+      "description": "Cargador de pared USB-C con carga rápida PD. Incluye cable USB-C a USB-C.",
+      "priceCop": 69900,
+      "stock": 20,
+      "image": "/products/ilustraciones/cargador.svg",
+      "imageIsIllustration": true,
+      "connector": "USB-C",
+      "highlights": [
+        "Power Delivery 25 W",
+        "Cable USB-C incluido"
+      ],
+      "colors": [
+        "Blanco"
+      ],
+      "warrantyMonths": null
+    },
+    {
+      "id": "cable-usbc-1m",
+      "categoryId": "cargadores",
+      "brand": "Genérico (demo)",
+      "model": "Cable USB-C a USB-C 1 m",
+      "description": "Cable trenzado de 1 metro para carga y datos.",
+      "priceCop": 29900,
+      "stock": 30,
+      "image": "/products/ilustraciones/cable.svg",
+      "imageIsIllustration": true,
+      "connector": "USB-C",
+      "highlights": [
+        "Trenzado resistente",
+        "1 metro"
+      ],
+      "colors": [
+        "Negro"
+      ],
+      "warrantyMonths": null
+    },
+    {
+      "id": "powerbank-10000",
+      "categoryId": "otros",
+      "brand": "Genérico (demo)",
+      "model": "Batería externa 10.000 mAh",
+      "description": "Batería portátil con salida USB-C para recargar el celular fuera de casa.",
+      "priceCop": 89900,
+      "stock": 10,
+      "image": "/products/ilustraciones/powerbank.svg",
+      "imageIsIllustration": true,
+      "batteryMah": 10000,
+      "connector": "USB-C",
+      "highlights": [
+        "10.000 mAh",
+        "Salida USB-C"
+      ],
+      "colors": [
+        "Negro"
+      ],
+      "warrantyMonths": null
+    },
+    {
+      "id": "smartwatch-2i",
+      "categoryId": "otros",
+      "brand": "Genérico (demo)",
+      "model": "Reloj inteligente Watch 2i",
+      "description": "Reloj inteligente para notificaciones, pasos y ritmo cardíaco. Se conecta por app.",
+      "priceCop": 199900,
+      "stock": 6,
+      "image": "/products/smartwatch-2i.webp",
+      "connector": "Bluetooth",
+      "highlights": [
+        "Notificaciones",
+        "Monitoreo de actividad",
+        "Bluetooth"
+      ],
+      "colors": [
+        "Negro"
+      ],
+      "warrantyMonths": null
+    },
+    {
+      "id": "funda-galaxy-a07",
+      "categoryId": "proteccion",
+      "brand": "Genérico (demo)",
+      "model": "Funda antichoque Galaxy A07",
+      "description": "Funda transparente con esquinas reforzadas.",
+      "priceCop": 34900,
+      "stock": 15,
+      "image": "/products/ilustraciones/funda.svg",
+      "imageIsIllustration": true,
+      "highlights": [
+        "Esquinas reforzadas",
+        "Transparente"
+      ],
+      "colors": [
+        "Transparente"
+      ],
+      "warrantyMonths": null
+    },
+    {
+      "id": "vidrio-galaxy-a07",
+      "categoryId": "proteccion",
+      "brand": "Genérico (demo)",
+      "model": "Vidrio templado Galaxy A07",
+      "description": "Protector de pantalla en vidrio templado 9H.",
+      "priceCop": 24900,
+      "stock": 20,
+      "image": "/products/ilustraciones/vidrio.svg",
+      "imageIsIllustration": true,
+      "highlights": [
+        "Dureza 9H",
+        "Bordes completos"
+      ],
+      "colors": [],
+      "warrantyMonths": null
+    },
+    {
+      "id": "funda-galaxy-a37",
+      "categoryId": "proteccion",
+      "brand": "Genérico (demo)",
+      "model": "Funda antichoque Galaxy A37",
+      "description": "Funda transparente con esquinas reforzadas.",
+      "priceCop": 39900,
+      "stock": 10,
+      "image": "/products/ilustraciones/funda.svg",
+      "imageIsIllustration": true,
+      "highlights": [
+        "Esquinas reforzadas",
+        "Transparente"
+      ],
+      "colors": [
+        "Transparente"
+      ],
+      "warrantyMonths": null
+    },
+    {
+      "id": "vidrio-galaxy-a37",
+      "categoryId": "proteccion",
+      "brand": "Genérico (demo)",
+      "model": "Vidrio templado Galaxy A37",
+      "description": "Protector de pantalla en vidrio templado 9H.",
+      "priceCop": 29900,
+      "stock": 10,
+      "image": "/products/ilustraciones/vidrio.svg",
+      "imageIsIllustration": true,
+      "highlights": [
+        "Dureza 9H",
+        "Bordes completos"
+      ],
+      "colors": [],
+      "warrantyMonths": null
+    },
+    {
+      "id": "funda-moto-g15",
+      "categoryId": "proteccion",
+      "brand": "Genérico (demo)",
+      "model": "Funda antichoque Moto g15",
+      "description": "Funda transparente con esquinas reforzadas.",
+      "priceCop": 34900,
+      "stock": 12,
+      "image": "/products/ilustraciones/funda.svg",
+      "imageIsIllustration": true,
+      "highlights": [
+        "Esquinas reforzadas",
+        "Transparente"
+      ],
+      "colors": [
+        "Transparente"
+      ],
+      "warrantyMonths": null
+    },
+    {
+      "id": "vidrio-moto-g67",
+      "categoryId": "proteccion",
+      "brand": "Genérico (demo)",
+      "model": "Vidrio templado Moto g67",
+      "description": "Protector de pantalla en vidrio templado 9H.",
+      "priceCop": 29900,
+      "stock": 8,
+      "image": "/products/ilustraciones/vidrio.svg",
+      "imageIsIllustration": true,
+      "highlights": [
+        "Dureza 9H"
+      ],
+      "colors": [],
+      "warrantyMonths": null
+    },
+    {
+      "id": "funda-redmi-15c",
+      "categoryId": "proteccion",
+      "brand": "Genérico (demo)",
+      "model": "Funda antichoque Redmi 15C",
+      "description": "Funda transparente con esquinas reforzadas.",
+      "priceCop": 34900,
+      "stock": 14,
+      "image": "/products/ilustraciones/funda.svg",
+      "imageIsIllustration": true,
+      "highlights": [
+        "Esquinas reforzadas",
+        "Transparente"
+      ],
+      "colors": [
+        "Transparente"
+      ],
+      "warrantyMonths": null
+    },
+    {
+      "id": "vidrio-redmi-17",
+      "categoryId": "proteccion",
+      "brand": "Genérico (demo)",
+      "model": "Vidrio templado Redmi 17",
+      "description": "Protector de pantalla en vidrio templado 9H.",
+      "priceCop": 24900,
+      "stock": 10,
+      "image": "/products/ilustraciones/vidrio.svg",
+      "imageIsIllustration": true,
+      "highlights": [
+        "Dureza 9H"
+      ],
+      "colors": [],
+      "warrantyMonths": null
+    },
+    {
+      "id": "funda-iphone-17e",
+      "categoryId": "proteccion",
+      "brand": "Genérico (demo)",
+      "model": "Funda MagSafe iPhone 17e",
+      "description": "Funda transparente compatible con accesorios magnéticos.",
+      "priceCop": 59900,
+      "stock": 6,
+      "image": "/products/ilustraciones/funda.svg",
+      "imageIsIllustration": true,
+      "highlights": [
+        "Imán integrado",
+        "Transparente"
+      ],
+      "colors": [
+        "Transparente"
+      ],
+      "warrantyMonths": null
+    },
+    {
+      "id": "vidrio-iphone-17e",
+      "categoryId": "proteccion",
+      "brand": "Genérico (demo)",
+      "model": "Vidrio templado iPhone 17e",
+      "description": "Protector de pantalla en vidrio templado 9H.",
+      "priceCop": 34900,
+      "stock": 8,
+      "image": "/products/ilustraciones/vidrio.svg",
+      "imageIsIllustration": true,
+      "highlights": [
+        "Dureza 9H",
+        "Bordes completos"
+      ],
+      "colors": [],
+      "warrantyMonths": null
+    }
+  ],
+  "compatibilities": [
+    {
+      "accessoryId": "funda-galaxy-a07",
+      "phoneIds": [
+        "galaxy-a07"
+      ]
+    },
+    {
+      "accessoryId": "vidrio-galaxy-a07",
+      "phoneIds": [
+        "galaxy-a07"
+      ]
+    },
+    {
+      "accessoryId": "funda-galaxy-a37",
+      "phoneIds": [
+        "galaxy-a37"
+      ]
+    },
+    {
+      "accessoryId": "vidrio-galaxy-a37",
+      "phoneIds": [
+        "galaxy-a37"
+      ]
+    },
+    {
+      "accessoryId": "funda-moto-g15",
+      "phoneIds": [
+        "moto-g15"
+      ]
+    },
+    {
+      "accessoryId": "vidrio-moto-g67",
+      "phoneIds": [
+        "moto-g67"
+      ]
+    },
+    {
+      "accessoryId": "funda-redmi-15c",
+      "phoneIds": [
+        "redmi-15c"
+      ]
+    },
+    {
+      "accessoryId": "vidrio-redmi-17",
+      "phoneIds": [
+        "redmi-17"
+      ]
+    },
+    {
+      "accessoryId": "funda-iphone-17e",
+      "phoneIds": [
+        "iphone-17e"
+      ]
+    },
+    {
+      "accessoryId": "vidrio-iphone-17e",
+      "phoneIds": [
+        "iphone-17e"
+      ]
+    },
+    {
+      "accessoryId": "cargador-25w-usbc",
+      "phoneIds": "ALL_USB_C",
+      "note": "Carga con puerto USB-C. La velocidad máxima depende del celular."
+    },
+    {
+      "accessoryId": "cable-usbc-1m",
+      "phoneIds": "ALL_USB_C"
+    },
+    {
+      "accessoryId": "powerbank-10000",
+      "phoneIds": "ALL_USB_C"
+    },
+    {
+      "accessoryId": "jbl-tune-780nc",
+      "phoneIds": "ALL_PHONES",
+      "note": "Conexión Bluetooth."
+    },
+    {
+      "accessoryId": "airpods-pro",
+      "phoneIds": "ALL_PHONES",
+      "note": "Funciona por Bluetooth con Android; algunas funciones (ej. audio espacial personalizado, cambio automático) son exclusivas de iPhone."
+    },
+    {
+      "accessoryId": "smartwatch-2i",
+      "phoneIds": "ALL_PHONES",
+      "note": "Requiere la app del fabricante en el celular."
+    }
+  ],
+  "settings": {
+    "store_name": "JUDAH CELL",
+    "city": "Bogotá, Colombia",
+    "store_address": null,
+    "store_hours": null,
+    "whatsapp": null,
+    "warranty": {
+      "months": 6,
+      "coverage": "Garantía de seis (6) meses por funcionamiento.",
+      "requirements": [
+        "Presentar el recibo de compra."
+      ],
+      "resolution": "Ante una falla cubierta se contempla el cambio del teléfono o la devolución del dinero.",
+      "notes": [
+        "JUDAH CELL no realiza reparaciones."
+      ]
+    },
+    "payment_methods": [
+      {
+        "id": "efectivo",
+        "name": "Efectivo",
+        "detail": "Pago al recoger en el punto físico o contra entrega, según se confirme con el asesor."
+      },
+      {
+        "id": "transferencia",
+        "name": "Transferencia",
+        "detail": "Los datos de la cuenta se entregan por un canal oficial de JUDAH CELL al confirmar el pedido."
+      },
+      {
+        "id": "addi",
+        "name": "Addi",
+        "detail": "Compra a cuotas sujeta a aprobación de Addi. Las condiciones las define Addi."
+      },
+      {
+        "id": "sistecredito",
+        "name": "Sistecrédito",
+        "detail": "Crédito sujeto a aprobación de Sistecrédito. Las condiciones las define Sistecrédito."
+      }
+    ],
+    "delivery": {
+      "pickup": {
+        "enabled": true,
+        "detail": "Recogida en el punto físico de JUDAH CELL en Bogotá."
+      },
+      "home": {
+        "enabled": true,
+        "city": "Bogotá",
+        "detail": "Entrega a domicilio en Bogotá con costo adicional que depende de la ubicación."
+      },
+      "rates": null,
+      "estimated_times": null
+    }
+  },
+  "demoOrders": [
+    {
+      "code": "JC-DEMO01",
+      "customerName": "Cliente de prueba",
+      "phone": "3000000000",
+      "email": null,
+      "deliveryMode": "delivery",
+      "address": "Dirección de prueba",
+      "locality": "Chapinero",
+      "paymentMethod": "addi",
+      "status": "en_camino",
+      "deliveryCostCop": null,
+      "items": [
+        {
+          "productId": "galaxy-a37",
+          "quantity": 1
+        },
+        {
+          "productId": "funda-galaxy-a37",
+          "quantity": 1
+        }
+      ],
+      "createdAt": "2026-11-10T15:20:00-05:00"
+    },
+    {
+      "code": "JC-DEMO02",
+      "customerName": "Cliente de prueba",
+      "phone": "3000000000",
+      "email": null,
+      "deliveryMode": "pickup",
+      "address": null,
+      "locality": null,
+      "paymentMethod": "efectivo",
+      "status": "entregado",
+      "deliveryCostCop": null,
+      "items": [
+        {
+          "productId": "redmi-15c",
+          "quantity": 1
+        },
+        {
+          "productId": "cargador-25w-usbc",
+          "quantity": 1
+        }
+      ],
+      "createdAt": "2026-10-28T11:05:00-05:00"
+    }
+  ]
+}
